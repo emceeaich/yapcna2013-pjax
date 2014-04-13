@@ -61,7 +61,6 @@ get 'item/:id' => sub {
     }
 };
 
-app->secret('welcome to the clown car, bro');
 app->start;
 __DATA__
 
@@ -77,8 +76,8 @@ __DATA__
 <div id="content">
     <%= content %>
 </div>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.7.0/jquery.pjax.min.js"></script>
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery-pjax/jquery.pjax.js"></script>
 <script src="/app.js"></script> 
 </body>
 </html>
